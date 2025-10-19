@@ -1,0 +1,8 @@
+# Generated export CSVs (transactions, monthly, spend-only)
+data/exports/csv/transactions/profile=*/transactions.csv
+data/exports/csv/category_monthly/profile=*/category_monthly.csv
+data/exports/csv/category_spend_only/profile=*/category_spend_only.csv
+data/exports/csv/share_index.csv
+
+# DuckDB rules Parquet bundle
+data/rules_bundle/*.parquet
