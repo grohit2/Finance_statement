@@ -6,3 +6,55 @@ data/exports/csv/share_index.csv
 
 # DuckDB rules Parquet bundle
 data/rules_bundle/*.parquet
+
+# DuckDB database file
+bank-pipeline/conf/sql/rules.duckdb
+
+# NPM lockfiles
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+.venv/
+bank-pipeline/.venv/
+
+# Node / Web
+node_modules/
+**/node_modules/
+dist/
+build/
+.vite/
+.parcel-cache/
+.eslintcache
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Spark local
+spark-warehouse/
+.sparkStaging/
+derby.log
+
+# Environment files
+.env
+.env.*
+
+# Data lakes and generated data
+data/lake/
+data/meta/
+data/raw_archive/
+data/raw_inbox/
+data/exports/
