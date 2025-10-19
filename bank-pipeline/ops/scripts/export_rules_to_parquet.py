@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 import duckdb, os, sys, pathlib
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]
+ROOT = pathlib.Path(__file__).resolve().parents[2]  # bank-pipeline
+REPO = ROOT.parent                                  # repo root (Finance_statement)
 DB_PATH = ROOT / "conf" / "sql" / "rules.duckdb"
-OUT_DIR = ROOT / "data" / "rules_bundle"
+OUT_DIR = REPO / "data" / "rules_bundle"
 
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)

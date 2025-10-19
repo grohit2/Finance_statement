@@ -20,7 +20,7 @@ export:
 	. .venv/bin/activate && PYTHONPATH=. python -m jobs.export_csv --conf conf/pipeline.yaml
 
 shares:
-	. .venv/bin/activate && python jobs/build_shares.py --profiles conf/profiles.yaml --out data/exports/csv/share_index.csv
+	. .venv/bin/activate && python jobs/build_shares.py --profiles conf/profiles.yaml --out ../data/exports/csv/share_index.csv
 
 pipeline: ingest silver categorize gold export
 

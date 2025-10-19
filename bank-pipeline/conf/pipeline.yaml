@@ -1,12 +1,12 @@
 paths:
-  inbox: data/raw_inbox
-  archive: data/raw_archive
-  lake: data/lake
-  meta: data/meta
-  exports_csv: data/exports/csv
-  bronze: data/lake/bronze
-  silver: data/lake/silver
-  gold: data/lake/gold
+  inbox: ../data/raw_inbox
+  archive: ../data/raw_archive
+  lake: ../data/lake
+  meta: ../data/meta
+  exports_csv: ../data/exports/csv
+  bronze: ../data/lake/bronze
+  silver: ../data/lake/silver
+  gold: ../data/lake/gold
 
 formats:
   lake: parquet
@@ -22,10 +22,10 @@ partitioning:
 
 exports:
   transactions:
-    path: data/exports/csv/transactions
+    path: ../data/exports/csv/transactions
     filename: transactions.csv
   category_monthly:
-    path: data/exports/csv/category_monthly
+    path: ../data/exports/csv/category_monthly
     filename: category_monthly.csv
 
 rules:
