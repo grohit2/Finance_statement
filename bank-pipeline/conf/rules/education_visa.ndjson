@@ -1,0 +1,4 @@
+{"id":"visa-uscis-i730","description":"USCIS I-730","op":"regex","value":"(?i)\\buscis\\b.*\\bi[-\\s]?730\\b|\\bi[-\\s]?730\\b.*\\buscis\\b","category":"Visa","subcategory":"USCIS"}
+{"id":"visa-filing-fee-payment","description":"USCIS filing fee","op":"regex","value":"(?i)(\\bfil(?:ing)?\\s*fee\\b.*\\bpayment\\b|\\bpayment\\b.*\\bfil(?:ing)?\\s*fee\\b)","category":"Visa","subcategory":"Filing Fee"}
+{"id":"edu-transact-campus-parking","description":"Transact Campus parking","op":"regex","value":"(?i)\\btransact\\s+campus\\b.*\\bpark(ing)?\\b","category":"Education","subcategory":"Campus Parking"}
+{"id":"visa-uscis-generic","description":"USCIS fallback","op":"regex","value":"(?i)\\buscis\\b","category":"Visa","subcategory":"USCIS"}

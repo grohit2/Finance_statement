@@ -1,0 +1,2 @@
+{"id":"income-salary-teknowleap","description":"Teknowleap Inc direct deposit","op":"regex","value":"(?i)\\bteknowleap\\s+inc\\b.*(des:\\s*direct\\s*dep|ppd)","category":"Income","subcategory":"Salary"}
+{"id":"income-tax-refund-irs-treas-310","description":"IRS TREAS 310 tax refund","op":"regex","value":"(?i)\\birs\\s*treas\\s*310\\b.*\\btax\\s*ref(und)?\\b","category":"Income","subcategory":"Tax Refund"}

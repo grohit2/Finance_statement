@@ -1,0 +1,60 @@
+# Generic column rules engine
+# ops: equals, contains, regex, startswith, endswith, in, gt, gte, lt, lte, between
+# actions: [{ set: { target: <column>, value: <literal> } }]
+# logic: all (AND) | any (OR)
+# stop_after_match: true/false
+
+rules:
+  - id: amazon-shopping
+    priority: 10
+    logic: any
+    match:
+      - { column: description, op: regex, value: "(?i)\\bamazon\\b|\\bamzn\\b" }
+      - { column: clean_desc, op: contains, value: "amazon", case_insensitive: true }
+    actions:
+      - { set: { target: merchant, value: "Amazon" } }
+      - { set: { target: category, value: "Shopping" } }
+
+  - id: food-delivery
+    priority: 20
+    logic: any
+    match:
+      - { column: description, op: regex, value: "(?i)(zomato|swiggy|ubereats|doordash)" }
+    actions:
+      - { set: { target: category, value: "Dining" } }
+      - { set: { target: merchant, value: "Food Delivery" } }
+
+  - id: utilities
+    priority: 30
+    logic: any
+    match:
+      - { column: description, op: regex, value: "(?i)(jio|airtel|vi|bsnl|tata power|bescom|broadband|electric|gas|water)" }
+    actions:
+      - { set: { target: category, value: "Utilities" } }
+
+  - id: salary-credit
+    priority: 40
+    logic: all
+    match:
+      - { column: amount, op: gt, value: 0 }
+      - { column: description, op: regex, value: "(?i)(salary|payroll|wages|stipend)" }
+    actions:
+      - { set: { target: category, value: "Income" } }
+      - { set: { target: merchant, value: "Employer" } }
+
+  - id: transfers
+    priority: 50
+    logic: any
+    match:
+      - { column: description, op: regex, value: "(?i)(NEFT|IMPS|RTGS|UPI)" }
+    actions:
+      - { set: { target: category, value: "Transfers" } }
+      - { set: { target: is_transfer, value: true } }
+
+  - id: grocery
+    priority: 60
+    logic: any
+    match:
+      - { column: description, op: regex, value: "(?i)(big bazaar|d[-\s]?mart|reliance fresh|more|spar|star bazaar|aldi|safeway|trader\s?joes|whole\s?foods)" }
+    actions:
+      - { set: { target: category, value: "Groceries" } }

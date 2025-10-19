@@ -1,0 +1,33 @@
+paths:
+  inbox: data/raw_inbox
+  archive: data/raw_archive
+  lake: data/lake
+  meta: data/meta
+  exports_csv: data/exports/csv
+  bronze: data/lake/bronze
+  silver: data/lake/silver
+  gold: data/lake/gold
+
+formats:
+  lake: parquet
+  export: csv
+
+dedup:
+  txn_key: ["profile_id", "account_id", "post_date", "amount", "clean_desc"]
+
+partitioning:
+  bronze: ["profile_id"]
+  silver: ["profile_id","year","month"]
+  gold:   ["profile_id","year","month"]
+
+exports:
+  transactions:
+    path: data/exports/csv/transactions
+    filename: transactions.csv
+  category_monthly:
+    path: data/exports/csv/category_monthly
+    filename: category_monthly.csv
+
+rules:
+  type: ndjson
+  dir: conf/rules

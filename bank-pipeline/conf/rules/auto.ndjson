@@ -1,0 +1,7 @@
+{"id":"auto-tesla-motors","description":"Tesla Motors / reservation / site","op":"regex","value":"(?i)\\btesla\\s*motor(s)?\\b|\\btesla\\s*moto\\b|\\btesla\\s+reservation\\b|\\btesla\\.com\\b","category":"Auto","subcategory":"General"}
+{"id":"auto-tesla-supercharging","description":"Tesla Supercharge/Supercharger","op":"regex","value":"(?i)\\btesla\\s+supercharg(e|er)\\b","category":"Auto","subcategory":"Charging"}
+{"id":"auto-chargepoint","description":"ChargePoint public EV charging","op":"regex","value":"(?i)\\bchargepoint\\b","category":"Auto","subcategory":"Charging"}
+{"id":"auto-tesla-software","description":"FSD / Autopilot software","op":"regex","value":"(?i)\\b(full\\s*self[- ]?driving|fsd|autopilot|enhanced\\s*autopilot)\\b","category":"Auto","subcategory":"Software"}
+{"id":"auto-tesla-connectivity","description":"Premium Connectivity / internet","op":"regex","value":"(?i)(premium\\s+connectivity|connectivity\\s+subscription|\\btesla\\.com\\b)","category":"Auto","subcategory":"Internet"}
+{"id":"auto-insurance-statefarm","description":"State Farm insurance","op":"regex","value":"(?i)\\bstate\\s*farm\\b","category":"Auto","subcategory":"Insurance"}
+{"id":"auto-tesla-generic","description":"Fallback Tesla catch-all","op":"regex","value":"(?i)\\btesla\\b","category":"Auto","subcategory":"General"}

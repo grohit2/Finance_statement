@@ -1,0 +1,1 @@
+{"id":"groceries-generic","description":"Groceries generic","op":"regex","value":"(?i)(aldi|safeway|more|d[-\\s]?mart|whole\\s*foods|trader\\s*joes)","category":"Groceries","subcategory":"General"}

@@ -1,0 +1,12 @@
+{"id":"sub-amazon-prime","description":"Amazon Prime","op":"regex","value":"(?i)\\bamazon\\s+prime\\b","category":"Subscriptions","subcategory":"Amazon Prime"}
+{"id":"sub-audible","description":"Audible","op":"regex","value":"(?i)\\baudible\\b","category":"Subscriptions","subcategory":"Audiobooks"}
+{"id":"sub-amc-9640-online","description":"AMC 9640 ONLINE","op":"regex","value":"(?i)\\bamc\\b.*\\b9640\\b.*\\bonline\\b","category":"Subscriptions","subcategory":"Entertainment"}
+{"id":"sub-aws","description":"AWS / Amazon Web Services","op":"regex","value":"(?i)\\baws\\b|\\bamazon\\s+web\\s+services\\b","category":"Subscriptions","subcategory":"Cloud"}
+{"id":"sub-go-car-wash","description":"GO Car Wash recurring","op":"regex","value":"(?i)\\bgo\\s*car\\s*w(ash)?\\b","category":"Subscriptions","subcategory":"Car Wash"}
+{"id":"sub-claude-anthropic","description":"Claude.ai / Anthropic","op":"regex","value":"(?i)\\bclaude\\.ai\\b|\\banthropic\\b|https.*anth","category":"Subscriptions","subcategory":"AI"}
+{"id":"sub-netflix","description":"Netflix","op":"regex","value":"(?i)\\bnetflix\\b","category":"Subscriptions","subcategory":"Streaming Video"}
+{"id":"sub-openai-chatgpt","description":"OpenAI ChatGPT subscription","op":"regex","value":"(?i)\\bopenai\\b.*\\bchatgpt\\b.*\\bsubscr|\\bopenai\\b.*(openai\\.com|https.*openai)","category":"Subscriptions","subcategory":"AI"}
+{"id":"sub-regal-unlimited","description":"Regal Cinemas Unlimited","op":"regex","value":"(?i)regalcinemasunlim|\\bregal\\s*cinema(s)?\\b","category":"Subscriptions","subcategory":"Entertainment"}
+{"id":"sub-microsoft","description":"Microsoft recurring","op":"regex","value":"(?i)\\bmicrosoft\\b","category":"Subscriptions","subcategory":"Software"}
+{"id":"sub-rocket-money","description":"Rocket Money Premium","op":"regex","value":"(?i)\\brocket\\s+money\\b.*\\bpremium\\b","category":"Subscriptions","subcategory":"Finance"}
+{"id":"sub-generic","description":"Generic subscription fallback","op":"regex","value":"(?i)\\bsubscr(iption)?\\b|\\brecurring\\b","category":"Subscriptions","subcategory":"Other"}

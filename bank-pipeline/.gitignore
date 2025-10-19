@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+dist/
+apps/react-d3/node_modules/
+apps/react-d3/dist/
+data/lake/
+data/meta/
+data/raw_archive/
+data/raw_inbox/
+bank-pipeline.zip

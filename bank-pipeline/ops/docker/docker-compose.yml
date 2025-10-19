@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  rules:
+    build:
+      context: ../..
+      dockerfile: ops/docker/rules.Dockerfile
+    container_name: bank_rules
+    working_dir: /work
+    volumes:
+      - ../..:/work                  # mount repo root
+    # no ports needed; we exec in
+    command: bash -lc "sleep infinity"

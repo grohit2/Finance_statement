@@ -1,0 +1,25 @@
+category,subcategory,description
+Auto,General,General Tesla or vehicle-related spend
+Auto,Charging,EV charging (Tesla Supercharge, ChargePoint)
+Auto,Software,Vehicle software/FSD/Autopilot
+Auto,Internet,Premium Connectivity / connectivity subscription
+Auto,Insurance,Auto insurance (e.g., State Farm)
+Housing,Rent,Apartment/house rent
+Utilities,Internet,Home internet providers (e.g., Comcast/Xfinity)
+Education,Campus Parking,On-campus parking fees
+Visa,USCIS,USCIS-related fees and filings
+Visa,Filing Fee,USCIS filing fee payments
+Family,India Remittance,Remitly or similar transfers to India
+Family,Remittance,Generic remittance transactions
+Income,Salary,Employer direct deposits
+Income,Tax Refund,IRS tax refund credits
+Subscriptions,Amazon Prime,Amazon Prime subscription
+Subscriptions,Entertainment,Movie passes (AMC/Regal etc.)
+Subscriptions,Audiobooks,Audible subscription
+Subscriptions,Cloud,Cloud services (AWS)
+Subscriptions,Car Wash,Recurring car wash plans
+Subscriptions,AI,AI subscriptions (OpenAI/Anthropic)
+Subscriptions,Streaming Video,Netflix, etc.
+Subscriptions,Software,Microsoft or similar software subs
+Subscriptions,Finance,Premium finance tools (Rocket Money)
+Subscriptions,Other,Catch-all recurring/subscription charges

@@ -1,0 +1,10 @@
+# Optional broader taxonomy (your rules already assign categories).
+categories:
+  - name: Groceries
+  - name: Dining
+  - name: Utilities
+  - name: Income
+  - name: Transfers
+  - name: Shopping
+fallback:
+  name: Uncategorized

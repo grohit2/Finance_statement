@@ -1,0 +1,3 @@
+{"id":"housing-rent-drucker-falk","description":"Drucker & Falk rent","op":"regex","value":"(?i)\\bdruckerfalk(?:-\\d+)?\\b|\\bdrucker\\s*&?\\s*falk\\b","category":"Housing","subcategory":"Rent"}
+{"id":"housing-rent-chelsea-square","description":"Chelsea Square rent","op":"regex","value":"(?i)(ysi\\*)?\\s*chelsea\\s*squar(e)?","category":"Housing","subcategory":"Rent"}
+{"id":"utilities-internet-comcast","description":"Comcast / Xfinity internet","op":"regex","value":"(?i)\\bcomcast\\b|\\bxfinity\\b","category":"Utilities","subcategory":"Internet"}

@@ -1,0 +1,4 @@
+profile_id,txn_id,account_id,post_date,amount,currency,name,clean_desc,merchant,category,subcategory,operation,is_transfer
+lokesh,3ace096ae1a09712,LOK-CHK-001,2025-01-05,-850.0,INR,D-Mart Koramangala,d-mart koramangala,,Groceries,General,set_category:groceries-generic:Groceries/General,false
+lokesh,88092b4e51c29977,LOK-CHK-001,2025-01-02,50000.0,INR,Salary Credit,salary credit,,,,,false
+lokesh,ba3263e791d9596b,LOK-CHK-001,2024-12-31,-123.45,INR,Amazon Marketplace,amazon marketplace,,,,,false

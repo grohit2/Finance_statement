@@ -1,0 +1,15 @@
+profiles:
+  - id: "lokesh"
+    display_name: "Lokesh"
+    share_with: ["rohit"]
+    accounts:
+      - account_id: "LOK-CHK-001"
+        bank: "YourBank"
+        currency: "INR"
+  - id: "rohit"
+    display_name: "Rohit"
+    share_with: ["lokesh"]
+    accounts:
+      - account_id: "ROH-CHK-001"
+        bank: "YourBank"
+        currency: "INR"

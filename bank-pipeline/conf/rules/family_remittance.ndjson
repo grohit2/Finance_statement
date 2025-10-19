@@ -1,0 +1,2 @@
+{"id":"family-remitly","description":"Remitly / RMTLY / remittance / PMNT SENT","op":"regex","value":"(?i)\\bremitly\\b|\\brmtly\\*?\\b|\\bremittance\\b|\\bpmnt\\s*sent\\b","category":"Family","subcategory":"India Remittance"}
+{"id":"family-remittance-generic","description":"Generic remittance fallback","op":"regex","value":"(?i)\\bremittance\\b","category":"Family","subcategory":"Remittance"}
